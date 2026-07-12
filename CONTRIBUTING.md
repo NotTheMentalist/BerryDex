@@ -4,6 +4,13 @@ Thanks for helping fill out the BerryDex! The two most useful contributions are
 **recipes** and **better real-world fruit identifications** — several berries are
 marked "Uncertain — suggestions welcome!" in their files.
 
+Recipes whose name ends in **"(Sample Recipe)"** were AI-generated to
+demonstrate the format, not vouched for by a human cook. They're fair game:
+if you've made something better for that fruit, feel free to replace one
+outright — and if you've actually cooked a sample recipe and it holds up,
+a PR simply dropping the marker (with a note in the description) is a
+welcome contribution too.
+
 ## Where the data lives
 
 - Every **berry** is a YAML file in [`berries/`](berries/) (number, name,
