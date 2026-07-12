@@ -71,17 +71,31 @@ function page({ title, body, depth = 0 }) {
 <link rel="stylesheet" href="${base}style.css">
 </head>
 <body>
-<header>
-  <a class="home" href="${base}index.html"><h1>🍒 BerryDex</h1></a>
-  <p class="tagline">Pok&eacute;mon berries, their real-world fruits, and things to cook with them</p>
-</header>
-<main>
+<div class="pokedex">
+  <header>
+    <div class="lens-row">
+      <div class="lens"></div>
+      <div class="leds"><span class="led led-red"></span><span class="led led-yellow"></span><span class="led led-green"></span></div>
+    </div>
+    <a class="home" href="${base}index.html"><h1>BerryDex</h1></a>
+    <p class="tagline">Pok&eacute;mon berries, their real-world fruits, and things to cook with them</p>
+  </header>
+  <div class="hinge"></div>
+  <main class="screen-bezel">
+    <div class="plaque">
+      <p class="plaque-label">DOT MATRIX WITH BERRY FLAVOR</p>
+      <div class="plaque-battery"><span class="battery-led"></span>BATTERY</div>
+      <div class="screen">
 ${body}
-</main>
-<footer>
-  <p>Data lives in plain YAML files — <a href="https://github.com/NotTheMentalist/BerryDex">suggest a recipe or berry name on GitHub</a>!</p>
-  <p>Sprites &copy; Nintendo / Game Freak, via <a href="https://github.com/PokeAPI/sprites">Pok&eacute;API</a>. Fan project, not affiliated.</p>
-</footer>
+      </div>
+    </div>
+    <div class="bezel-foot"><span class="led led-red big"></span><span class="speaker"></span></div>
+  </main>
+  <footer>
+    <p>Data lives in plain YAML files — <a href="https://github.com/NotTheMentalist/BerryDex">suggest a recipe or berry name on GitHub</a>!</p>
+    <p>Sprites &copy; Nintendo / Game Freak, via <a href="https://github.com/PokeAPI/sprites">Pok&eacute;API</a>. Fan project, not affiliated.</p>
+  </footer>
+</div>
 </body>
 </html>`;
 }
@@ -96,7 +110,7 @@ function indexPage(berries) {
     .map(
       (b) => `  <a class="card" href="berry/${esc(b.slug)}.html">
     <img src="${esc(b.sprite)}" alt="${esc(b.name)} Berry sprite" width="48" height="48">
-    <span class="num">#${String(b.number).padStart(2, "0")}</span>
+    <span class="num">#${String(b.number).padStart(3, "0")}</span>
     <span class="name">${esc(b.name)}</span>
     <span class="fruit">${esc(b.fruit)}</span>
     <span class="count${b.recipes.length ? " has-recipes" : ""}">${recipeCount(b)}</span>
@@ -142,7 +156,7 @@ function berryPage(b) {
   <div class="berry-head">
     <img src="../${esc(b.sprite)}" alt="${esc(b.name)} Berry sprite" width="96" height="96">
     <div>
-      <h2><span class="num">#${String(b.number).padStart(2, "0")}</span> ${esc(b.name)} Berry</h2>
+      <h2><span class="num">#${String(b.number).padStart(3, "0")}</span> ${esc(b.name)} Berry</h2>
       <p class="fruit-line">Real-world equivalent: <strong>${esc(b.fruit)}</strong></p>
       ${b.name_origin ? `<p class="origin">${esc(b.name_origin)}</p>` : ""}
     </div>

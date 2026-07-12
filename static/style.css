@@ -1,98 +1,276 @@
+/* BerryDex — classic red-Pokédex device look. The device is red in any theme;
+   only the page backdrop shifts with the user's color scheme. */
 :root {
-  --bg: #faf7f2;
-  --card: #ffffff;
-  --ink: #33302b;
-  --muted: #7a746a;
-  --accent: #d0455a;
-  --accent-soft: #f7dee2;
-  --border: #e7e1d6;
+  --backdrop: #d8d3c8;
+  --shell: #dc0a2d;
+  --shell-dark: #a00622;
+  --shell-edge: #7c0519;
+  --screen: #cadc9f;
+  --screen-ink: #1f3324;
+  --screen-line: #9ab86e;
+  --panel: #e3edc4;
+  --muted: #4f6244;
+  --accent: #a00622;
+  --lcd-blue: #29a8df;
+
+  /* Plaque shoulder room: shrink if berry cards need more width, grow for
+     more anime-Pokédex chunk. The battery LED/label scale along with it. */
+  --plaque-gutter: 2.6rem;
+  --plaque-battery-col: calc(var(--plaque-gutter) * 1.7);
+  --battery-led-size: calc(var(--plaque-gutter) * 0.27);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #1f1d1a;
-    --card: #2a2722;
-    --ink: #ece7de;
-    --muted: #a29a8c;
-    --accent: #e57385;
-    --accent-soft: #45242b;
-    --border: #3a362f;
-  }
+  :root { --backdrop: #24211e; }
 }
+
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-  background: var(--bg);
-  color: var(--ink);
+  padding: 1.5rem 0.75rem 3rem;
+  background: var(--backdrop);
+  font-family: "Courier New", ui-monospace, monospace;
   line-height: 1.5;
 }
-header { text-align: center; padding: 2rem 1rem 0.5rem; }
-header .home { text-decoration: none; color: inherit; }
-header h1 { margin: 0; font-size: 2rem; }
-.tagline { color: var(--muted); margin-top: 0.25rem; }
-main { max-width: 60rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
 
+/* ---------- the device shell ---------- */
+.pokedex {
+  max-width: 62rem;
+  margin: 0 auto;
+  background: linear-gradient(160deg, #ef2245 0%, var(--shell) 45%, var(--shell-dark) 100%);
+  border: 4px solid var(--shell-edge);
+  border-radius: 1.5rem 4.5rem 1.5rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.25);
+  padding: 1.25rem 1.5rem 1.5rem;
+  color: #fff;
+}
+
+header { padding: 0 0 0.75rem; }
+.lens-row { display: flex; align-items: flex-start; gap: 1rem; }
+.lens {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 30%, #ffffff 0 12%, rgba(255, 255, 255, 0) 40%),
+    radial-gradient(circle at 50% 50%, #9ad9f7 0%, var(--lcd-blue) 45%, #145a86 100%);
+  border: 5px solid #f2f3f4;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4), inset 0 -4px 8px rgba(0, 0, 40, 0.35);
+  flex-shrink: 0;
+}
+.leds { display: flex; gap: 0.5rem; padding-top: 0.35rem; }
+.led {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.35), 0 0 6px currentColor;
+}
+.led-red { background: #ff3b30; color: #ff3b30; }
+.led-yellow { background: #ffd60a; color: #ffd60a; }
+.led-green { background: #34c759; color: #34c759; }
+.led.big { width: 1.3rem; height: 1.3rem; }
+
+.home { text-decoration: none; color: inherit; }
+h1 {
+  margin: 0.75rem 0 0;
+  font-size: 2.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 var(--shell-edge);
+}
+.tagline { color: #ffd9df; margin: 0.25rem 0 0; font-size: 0.85rem; }
+
+.hinge {
+  height: 0.9rem;
+  margin: 0 -1.5rem 1.25rem;
+  background: linear-gradient(var(--shell-edge), var(--shell-dark));
+  box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- the screen ---------- */
+/* 1995-era handheld: grey shell plastic, then the dark bezel plaque, then the LCD */
+.screen-bezel {
+  background: linear-gradient(170deg, #cfcdc3 0%, #bdbbb1 55%, #a8a69c 100%);
+  border-radius: 0.9rem 0.9rem 0.9rem 3rem;
+  padding: 1.4rem 1.4rem 0.9rem;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
+  color: var(--screen-ink);
+}
+.plaque {
+  position: relative;
+  background: linear-gradient(180deg, #5c5c74 0%, #4a4a60 100%);
+  border-radius: 0.6rem 0.6rem 2rem 0.6rem;
+  padding: 2rem var(--plaque-gutter) 2rem var(--plaque-battery-col);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(255, 255, 255, 0.35);
+  border-top: 3px solid #8b1f43;
+  border-bottom: 3px solid #1d2a6b;
+}
+.plaque-label {
+  position: absolute;
+  top: 0.35rem;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  color: #c9c9d8;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+}
+.plaque-battery {
+  position: absolute;
+  left: 0;
+  width: var(--plaque-battery-col);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  color: #c9c9d8;
+  font-size: calc(var(--plaque-gutter) * 0.21);
+  letter-spacing: 0.12em;
+}
+.battery-led {
+  width: var(--battery-led-size);
+  height: var(--battery-led-size);
+  border-radius: 50%;
+  background: #ff3b30;
+  box-shadow: 0 0 8px #ff3b30, inset 0 -2px 3px rgba(0, 0, 0, 0.4);
+}
+.screen {
+  background:
+    repeating-linear-gradient(rgba(15, 56, 15, 0.08) 0 2px, transparent 2px 4px),
+    var(--screen);
+  border: 3px solid #33402e;
+  border-radius: 0.4rem;
+  padding: 1.25rem;
+  min-height: 12rem;
+  box-shadow: inset 0 0 24px rgba(15, 56, 15, 0.35);
+}
+.bezel-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0.4rem 0;
+}
+.speaker {
+  width: 3.2rem;
+  height: 0.9rem;
+  background: repeating-linear-gradient(90deg, #3d4a3e 0 4px, transparent 4px 9px);
+  border-radius: 2px;
+}
+
+/* ---------- contribute CTA & page ---------- */
+.cta-row { text-align: center; margin: 0 0 1.1rem; }
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.3rem;
+  border-radius: 2rem;
+  border: 2px solid #6d0418;
+  box-shadow: 0 3px 0 #6d0418;
+}
+.cta:hover { transform: translateY(1px); box-shadow: 0 2px 0 #6d0418; }
+.contribute h2 { margin-top: 0; text-transform: uppercase; letter-spacing: 0.05em; }
+.contribute h3 {
+  margin-top: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 3px double var(--screen-line);
+  padding-bottom: 0.25rem;
+}
+.contribute pre {
+  background: var(--panel);
+  border: 2px solid var(--screen-line);
+  border-radius: 0.4rem;
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+.contribute code { font-size: 0.9em; }
+
+/* ---------- index grid ---------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.1rem;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  padding: 0.9rem 0.5rem;
+  gap: 0.05rem;
+  background: var(--panel);
+  border: 2px solid var(--screen-line);
+  border-radius: 0.4rem;
+  padding: 0.8rem 0.5rem;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.08s ease, border-color 0.08s ease;
 }
-.card:hover { transform: translateY(-2px); border-color: var(--accent); }
-.card img { image-rendering: pixelated; }
-.num { color: var(--muted); font-size: 0.75rem; }
-.card .name { font-weight: 700; }
-.card .fruit { font-size: 0.85rem; color: var(--muted); text-align: center; }
-.card .count { font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; }
+.card:hover { border-color: var(--accent); background: #eff5d9; }
+.card img, .berry-head img { image-rendering: pixelated; }
+.num { color: var(--muted); font-size: 0.75rem; font-weight: 700; }
+.card .name { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.card .fruit { font-size: 0.8rem; color: var(--muted); text-align: center; }
+.card .count { font-size: 0.7rem; color: var(--muted); margin-top: 0.3rem; }
 .card .count.has-recipes {
-  color: var(--accent);
-  background: var(--accent-soft);
+  color: #fff;
+  background: var(--accent);
   padding: 0.05rem 0.5rem;
   border-radius: 1rem;
 }
 
+/* ---------- berry entry ---------- */
 .berry-head { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
-.berry-head img { image-rendering: pixelated; }
-.berry h2 { margin: 0; }
+.berry h2 { margin: 0; text-transform: uppercase; letter-spacing: 0.05em; }
 .berry h2 .num { font-size: 1rem; }
 .fruit-line { margin: 0.25rem 0 0; }
 .origin { color: var(--muted); font-size: 0.9rem; margin: 0.25rem 0 0; }
-.berry h3 { margin-top: 2rem; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.25rem; }
+.berry h3 {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 3px double var(--screen-line);
+  padding-bottom: 0.25rem;
+}
 
 .recipes { list-style: none; padding: 0; }
 .recipes li {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
+  background: var(--panel);
+  border: 2px solid var(--screen-line);
+  border-radius: 0.4rem;
   padding: 0.9rem 1.1rem;
   margin-bottom: 0.6rem;
 }
-.recipe-link { font-weight: 600; color: var(--accent); }
+.recipe-link { font-weight: 700; }
 .notes { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9rem; }
 .credit { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.8rem; font-style: italic; }
 .also { margin: 0.2rem 0 0; font-size: 0.85rem; color: var(--muted); }
-.recipe-photo { max-width: 100%; border-radius: 0.5rem; margin-top: 0.6rem; }
+.recipe-photo { max-width: 100%; border-radius: 0.4rem; margin-top: 0.6rem; }
 .empty { color: var(--muted); font-style: italic; }
-.back { margin-top: 2rem; }
+.back { margin-top: 1.5rem; }
+.back a { text-decoration: none; font-weight: 700; }
 
-a { color: var(--accent); }
+.screen a { color: var(--accent); }
+
 footer {
   text-align: center;
-  color: var(--muted);
-  font-size: 0.8rem;
-  padding: 1rem;
-  border-top: 1px solid var(--border);
+  color: #ffd9df;
+  font-size: 0.75rem;
+  padding-top: 1rem;
 }
+footer a { color: #fff; }
 footer p { margin: 0.25rem 0; }
+
+@media (max-width: 480px) {
+  .pokedex { padding: 1rem 0.9rem; border-radius: 1rem 3rem 1rem 1rem; }
+  .hinge { margin: 0 -0.9rem 1rem; }
+  .screen-bezel { padding: 0.9rem 0.9rem 0.7rem; }
+  .plaque { --plaque-gutter: 1.4rem; padding-top: 1.8rem; padding-bottom: 1.2rem; }
+}
