@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 20
+name: Pinap
+sprite: images/berries/pinap-berry.png
+fruit: "Pineapple"
+name_origin: "Shortening of “pineapple”."

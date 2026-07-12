@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 34
+name: Durin
+sprite: images/berries/durin-berry.png
+fruit: "Durian"
+name_origin: "Shortening of “durian”."

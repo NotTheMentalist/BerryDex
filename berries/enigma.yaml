@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 60
+name: Enigma
+sprite: images/berries/enigma-berry.png
+fruit: "A mystery!"
+name_origin: "Not a fruit — just “enigma”. Fitting. (Suggestions welcome!)"

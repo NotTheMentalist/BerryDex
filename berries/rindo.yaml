@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 39
+name: Rindo
+sprite: images/berries/rindo-berry.png
+fruit: "Tamarind"
+name_origin: "From “tamarindo”; resists Grass."

@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 27
+name: Cornn
+sprite: images/berries/cornn-berry.png
+fruit: "Corn"
+name_origin: "From “corn” — heirloom flint corn, by the look of it."

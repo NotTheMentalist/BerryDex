@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 62
+name: Custap
+sprite: images/berries/custap-berry.png
+fruit: "Custard apple"
+name_origin: "Shortening of “custard apple”."

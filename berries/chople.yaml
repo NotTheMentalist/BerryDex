@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 41
+name: Chople
+sprite: images/berries/chople-berry.png
+fruit: "Chile pepper"
+name_origin: "From “chipotle”; resists Fighting."

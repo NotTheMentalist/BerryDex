@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 16
+name: Razz
+sprite: images/berries/razz-berry.png
+fruit: "Raspberry"
+name_origin: "Shortening of “razzberry” (raspberry)."

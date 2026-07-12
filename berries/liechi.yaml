@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 53
+name: Liechi
+sprite: images/berries/liechi-berry.png
+fruit: "Lychee"
+name_origin: "Respelling of “lychee”."

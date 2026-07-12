@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 45
+name: Payapa
+sprite: images/berries/payapa-berry.png
+fruit: "Papaya"
+name_origin: "Respelling of “papaya”; resists Psychic."

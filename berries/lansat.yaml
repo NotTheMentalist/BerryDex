@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 58
+name: Lansat
+sprite: images/berries/lansat-berry.png
+fruit: "Langsat"
+name_origin: "Respelling of “langsat”."

@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 3
+name: Pecha
+sprite: images/berries/pecha-berry.png
+fruit: "Peach"
+name_origin: "From “peach” (and Japanese “momo”)."

@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 9
+name: Lum
+sprite: images/berries/lum-berry.png
+fruit: "Plum"
+name_origin: "Shortening of “plum”."

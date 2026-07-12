@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 26
+name: Tamato
+sprite: images/berries/tamato-berry.png
+fruit: "Tomato"
+name_origin: "Respelling of “tomato” (with a hint of “tama”, Japanese for ball)."

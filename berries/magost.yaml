@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 28
+name: Magost
+sprite: images/berries/magost-berry.png
+fruit: "Mangosteen"
+name_origin: "Shortening of “mangosteen”."

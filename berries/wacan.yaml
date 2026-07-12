@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 38
+name: Wacan
+sprite: images/berries/wacan-berry.png
+fruit: "Wax gourd (winter melon)"
+name_origin: "Possibly from “wax gourd”; resists Electric. (Uncertain — suggestions welcome!)"

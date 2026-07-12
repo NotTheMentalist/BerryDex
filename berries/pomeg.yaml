@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 21
+name: Pomeg
+sprite: images/berries/pomeg-berry.png
+fruit: "Pomegranate"
+name_origin: "Shortening of “pomegranate”."

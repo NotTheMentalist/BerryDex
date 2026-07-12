@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 24
+name: Hondew
+sprite: images/berries/hondew-berry.png
+fruit: "Honeydew melon"
+name_origin: "Respelling of “honeydew”."

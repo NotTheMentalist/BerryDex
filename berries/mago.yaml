@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 13
+name: Mago
+sprite: images/berries/mago-berry.png
+fruit: "Mango"
+name_origin: "Shortening of “mango”."

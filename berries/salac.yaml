@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 55
+name: Salac
+sprite: images/berries/salac-berry.png
+fruit: "Salak (snake fruit)"
+name_origin: "From “salak”."

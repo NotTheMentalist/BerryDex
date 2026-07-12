@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 54
+name: Ganlon
+sprite: images/berries/ganlon-berry.png
+fruit: "Longan"
+name_origin: "Anagram of “longan”."

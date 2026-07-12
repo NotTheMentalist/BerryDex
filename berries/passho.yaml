@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 37
+name: Passho
+sprite: images/berries/passho-berry.png
+fruit: "Passion fruit"
+name_origin: "From “passion fruit”; resists Water."

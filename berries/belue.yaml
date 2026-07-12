@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 35
+name: Belue
+sprite: images/berries/belue-berry.png
+fruit: "Blueberry"
+name_origin: "Respelling of “blue(berry)”."

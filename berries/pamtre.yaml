@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 32
+name: Pamtre
+sprite: images/berries/pamtre-berry.png
+fruit: "Date (palm fruit)"
+name_origin: "Anagram-ish of “palm tree”."

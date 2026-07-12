@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 17
+name: Bluk
+sprite: images/berries/bluk-berry.png
+fruit: "Blackberry"
+name_origin: "From “black(berry)”, despite looking like a blueberry."

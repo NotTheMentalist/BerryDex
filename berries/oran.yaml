@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 7
+name: Oran
+sprite: images/berries/oran-berry.png
+fruit: "Orange"
+name_origin: "Shortening of “orange”."

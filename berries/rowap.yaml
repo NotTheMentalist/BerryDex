@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 64
+name: Rowap
+sprite: images/berries/rowap-berry.png
+fruit: "Rowan berry"
+name_origin: "Possibly a corruption of “rowan”. (Uncertain — suggestions welcome!)"

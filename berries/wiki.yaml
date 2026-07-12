@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 12
+name: Wiki
+sprite: images/berries/wiki-berry.png
+fruit: "Kiwi"
+name_origin: "Anagram of “kiwi”."

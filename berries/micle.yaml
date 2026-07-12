@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 61
+name: Micle
+sprite: images/berries/micle-berry.png
+fruit: "Miracle fruit"
+name_origin: "Shortening of “miracle (fruit)”."

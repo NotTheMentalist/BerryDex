@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 19
+name: Wepear
+sprite: images/berries/wepear-berry.png
+fruit: "Pear"
+name_origin: "Contains “pear”; possibly “wax apple” + “pear”."

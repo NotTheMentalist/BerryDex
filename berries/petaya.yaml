@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 56
+name: Petaya
+sprite: images/berries/petaya-berry.png
+fruit: "Pitaya (dragon fruit)"
+name_origin: "Respelling of “pitaya”."

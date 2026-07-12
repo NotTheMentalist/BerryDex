@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 57
+name: Apicot
+sprite: images/berries/apicot-berry.png
+fruit: "Apricot"
+name_origin: "Respelling of “apricot”."

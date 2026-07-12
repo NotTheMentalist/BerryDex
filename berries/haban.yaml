@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 49
+name: Haban
+sprite: images/berries/haban-berry.png
+fruit: "Habanero pepper"
+name_origin: "From “habanero”; resists Dragon."

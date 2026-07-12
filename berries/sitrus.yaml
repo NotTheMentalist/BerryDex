@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 10
+name: Sitrus
+sprite: images/berries/sitrus-berry.png
+fruit: "Citrus"
+name_origin: "Respelling of “citrus”."

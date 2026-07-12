@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 31
+name: Spelon
+sprite: images/berries/spelon-berry.png
+fruit: "Melon"
+name_origin: "Contains “melon”; possibly “spiked melon”."

@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 50
+name: Colbur
+sprite: images/berries/colbur-berry.png
+fruit: "Colubrina (nakedwood)"
+name_origin: "Possibly from “colubrina”; resists Dark. (Uncertain — suggestions welcome!)"

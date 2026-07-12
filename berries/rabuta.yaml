@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 29
+name: Rabuta
+sprite: images/berries/rabuta-berry.png
+fruit: "Rambutan"
+name_origin: "Shortening of “rambutan”."

@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 1
+name: Cheri
+sprite: images/berries/cheri-berry.png
+fruit: "Cherry"
+name_origin: "Shortening of “cherry”."

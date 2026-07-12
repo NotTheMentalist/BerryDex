@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 40
+name: Yache
+sprite: images/berries/yache-berry.png
+fruit: "Lychee"
+name_origin: "Possibly an anagram-ish take on “lychee”; resists Ice."

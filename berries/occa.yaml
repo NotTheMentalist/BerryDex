@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 36
+name: Occa
+sprite: images/berries/occa-berry.png
+fruit: "Cacao (cocoa)"
+name_origin: "From “cocoa”; resists Fire."

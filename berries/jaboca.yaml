@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 63
+name: Jaboca
+sprite: images/berries/jaboca-berry.png
+fruit: "Jabuticaba"
+name_origin: "Shortening of “jabuticaba”."

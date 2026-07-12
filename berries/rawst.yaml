@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 4
+name: Rawst
+sprite: images/berries/rawst-berry.png
+fruit: "Strawberry"
+name_origin: "Anagram of “straw(berry)”."

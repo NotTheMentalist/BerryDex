@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 8
+name: Persim
+sprite: images/berries/persim-berry.png
+fruit: "Persimmon"
+name_origin: "Shortening of “persimmon”."

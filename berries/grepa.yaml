@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 25
+name: Grepa
+sprite: images/berries/grepa-berry.png
+fruit: "Grape"
+name_origin: "Anagram of “grape”."

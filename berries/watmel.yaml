@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 33
+name: Watmel
+sprite: images/berries/watmel-berry.png
+fruit: "Watermelon"
+name_origin: "Shortening of “watermelon”."

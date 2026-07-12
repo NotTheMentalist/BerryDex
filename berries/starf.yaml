@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 59
+name: Starf
+sprite: images/berries/starf-berry.png
+fruit: "Starfruit (carambola)"
+name_origin: "Shortening of “starfruit”."

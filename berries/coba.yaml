@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 44
+name: Coba
+sprite: images/berries/coba-berry.png
+fruit: "Carob"
+name_origin: "Possibly from “carob”; resists Flying. (Uncertain — suggestions welcome!)"

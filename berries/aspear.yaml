@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 5
+name: Aspear
+sprite: images/berries/aspear-berry.png
+fruit: "Pear"
+name_origin: "Contains “pear”; possibly “asparagus” + “pear”."

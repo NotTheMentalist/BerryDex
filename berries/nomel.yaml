@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 30
+name: Nomel
+sprite: images/berries/nomel-berry.png
+fruit: "Lemon"
+name_origin: "“Lemon” spelled backwards."

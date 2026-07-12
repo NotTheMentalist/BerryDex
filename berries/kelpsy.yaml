@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 22
+name: Kelpsy
+sprite: images/berries/kelpsy-berry.png
+fruit: "Kelp"
+name_origin: "From “kelp” — the odd one out, a sea vegetable."

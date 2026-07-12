@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 14
+name: Aguav
+sprite: images/berries/aguav-berry.png
+fruit: "Guava"
+name_origin: "Anagram of “guava”."

@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 52
+name: Chilan
+sprite: images/berries/chilan-berry.png
+fruit: "Chilacayote squash?"
+name_origin: "Possibly from “chilacayote” or “chinaberry”; resists Normal. (Uncertain — suggestions welcome!)"

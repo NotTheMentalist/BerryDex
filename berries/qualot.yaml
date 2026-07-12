@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 23
+name: Qualot
+sprite: images/berries/qualot-berry.png
+fruit: "Loquat"
+name_origin: "Anagram of “loquat”."

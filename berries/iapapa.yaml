@@ -1,0 +1,6 @@
+# BerryDex entry — recipes live in recipes/*.yaml; see CONTRIBUTING.md!
+number: 15
+name: Iapapa
+sprite: images/berries/iapapa-berry.png
+fruit: "Papaya"
+name_origin: "Anagram of “papaia”, a spelling of papaya."
