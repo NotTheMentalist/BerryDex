@@ -119,7 +119,70 @@ function indexPage(berries) {
     .join("\n");
   return page({
     title: "BerryDex",
-    body: `<div class="grid">\n${cards}\n</div>`,
+    body: `<p class="cta-row"><a class="cta" href="contribute.html">I want to submit a recipe!</a></p>
+<div class="grid">
+${cards}
+</div>`,
+  });
+}
+
+const REPO = "https://github.com/NotTheMentalist/BerryDex";
+
+function contributePage() {
+  const template = `name: Mango Sticky Rice
+link: https://example.com/mango-sticky-rice
+berries: [mago]      # berry filenames from berries/, e.g. [pinap, cheri]
+notes: "Optional: tips, substitutions, or commentary."
+contributed_by: "your name, handle, or shout-out"`;
+  const newFileUrl =
+    `${REPO}/new/main/recipes?filename=my-recipe.yaml&value=` +
+    encodeURIComponent(template);
+  const issueUrl =
+    `${REPO}/issues/new?title=` +
+    encodeURIComponent("Recipe suggestion: ") +
+    `&body=` +
+    encodeURIComponent(
+      "**Recipe name:**\n\n**Link:**\n\n**Which berries (real-world fruits) does it use?**\n\n**Notes (optional):**\n\n**How you want to be credited (optional):**\n"
+    );
+
+  return page({
+    title: "Submit a recipe — BerryDex",
+    body: `<article class="contribute">
+  <h2>Submit a recipe</h2>
+  <p>Every recipe on this site is a tiny text file in the
+  <a href="${REPO}/tree/main/recipes">recipes/</a> folder, which means anyone
+  with a GitHub account can add one. Savory dishes where fruit shows up
+  unexpectedly are especially welcome. Pick your comfort level:</p>
+
+  <h3>Level 1 — just tell us about it</h3>
+  <p>No Git, no YAML, no fuss: <a href="${issueUrl}">open an issue</a> with the
+  recipe name and link, and someone will add it for you (and credit you).</p>
+
+  <h3>Level 2 — GitHub's web editor</h3>
+  <p><a href="${newFileUrl}">Click here to start a new recipe file</a> —
+  GitHub opens its in-browser editor with a template already filled in:</p>
+  <pre><code>${esc(template)}</code></pre>
+  <ol>
+    <li>Rename the file after your dish (keep the <code>.yaml</code> ending).</li>
+    <li>Fill in the fields. Only <code>name</code>, <code>link</code>, and
+        <code>berries</code> are required.</li>
+    <li>Hit <strong>Commit changes&hellip;</strong> — GitHub will fork the
+        project and open a pull request for you automatically. That's it.</li>
+  </ol>
+  <p>You can also fix typos or improve a berry's real-world fruit guess the
+  same way: browse to any file in
+  <a href="${REPO}/tree/main/berries">berries/</a> and press the pencil icon.
+  GitHub Desktop works too, if that's more your speed.</p>
+
+  <h3>Level 3 — iykyk</h3>
+  <p>Clone, branch, add your file under <code>recipes/</code>, and open a PR.
+  <code>node build.js</code> validates your file locally; CI runs the same
+  check on the PR, so a misspelled berry slug gets caught with a readable
+  error. See <a href="${REPO}/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+  for the full format, including linked credits
+  (<code>contributed_by: {name, url}</code>) and photos.</p>
+</article>
+<p class="back"><a href="index.html">&larr; All berries</a></p>`,
   });
 }
 
@@ -174,6 +237,7 @@ fs.mkdirSync(path.join(DIST, "berry"), { recursive: true });
 
 const berries = loadData();
 fs.writeFileSync(path.join(DIST, "index.html"), indexPage(berries));
+fs.writeFileSync(path.join(DIST, "contribute.html"), contributePage());
 for (const b of berries) {
   fs.writeFileSync(path.join(DIST, "berry", `${b.slug}.html`), berryPage(b));
 }
