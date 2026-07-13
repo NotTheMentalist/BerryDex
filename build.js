@@ -129,9 +129,11 @@ ${cards}
 const REPO = "https://github.com/NotTheMentalist/BerryDex";
 
 function contributePage() {
+  // No trailing comments: whatever is here ends up verbatim in the
+  // contributor's committed file, and the hints outlive their usefulness.
   const template = `name: Mango Sticky Rice
 link: https://example.com/mango-sticky-rice
-berries: [mago]      # berry filenames from berries/, e.g. [pinap, cheri]
+berries: [mago]
 notes: "Optional: tips, substitutions, or commentary."
 contributed_by: "your name, handle, or shout-out"`;
   const newFileUrl =
@@ -165,7 +167,10 @@ contributed_by: "your name, handle, or shout-out"`;
   <ol>
     <li>Rename the file after your dish (keep the <code>.yaml</code> ending).</li>
     <li>Fill in the fields. Only <code>name</code>, <code>link</code>, and
-        <code>berries</code> are required.</li>
+        <code>berries</code> are required. <code>berries</code> takes the
+        filenames from <a href="${REPO}/tree/main/berries">berries/</a> —
+        <code>[mago]</code> for one, <code>[pinap, cheri]</code> if the dish
+        uses both.</li>
     <li>Hit <strong>Commit changes&hellip;</strong> — GitHub will fork the
         project and open a pull request for you automatically. That's it.</li>
   </ol>
