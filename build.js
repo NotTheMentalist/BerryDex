@@ -92,7 +92,7 @@ ${body}
     <div class="bezel-foot"><span class="led led-red big"></span><span class="speaker"></span></div>
   </main>
   <footer>
-    <p>Data lives in plain YAML files — <a href="https://github.com/NotTheMentalist/BerryDex">suggest a recipe or berry name on GitHub</a>!</p>
+    <p>Data lives in plain YAML files — <a href="https://github.com/NotTheMentalist/BerryDex">source and issues on GitHub</a>. Suggest a recipe or a better berry name!</p>
     <p>Sprites &copy; Nintendo / Game Freak, via <a href="https://github.com/PokeAPI/sprites">Pok&eacute;API</a>. Fan project, not affiliated.</p>
   </footer>
 </div>
@@ -153,8 +153,10 @@ contributed_by: "your name, handle, or shout-out"`;
   <h2>Submit a recipe</h2>
   <p>Every recipe on this site is a tiny text file in the
   <a href="${REPO}/tree/main/recipes">recipes/</a> folder, which means anyone
-  with a GitHub account can add one. Savory dishes where fruit shows up
-  unexpectedly are especially welcome. Pick your comfort level:</p>
+  with a GitHub account can add one.</p>
+  <p><strong>Entr&eacute;es and hors d'oeuvres — not desserts.</strong> The
+  whole point is fruit turning up somewhere surprising: pork loin, not pie.
+  Pick your comfort level:</p>
 
   <h3>Level 1 — just tell us about it</h3>
   <p>No Git, no YAML, no fuss: <a href="${issueUrl}">open an issue</a> with the
@@ -202,6 +204,14 @@ function berryPage(b) {
               .map((s) => `<a href="${esc(s)}.html">${esc(s[0].toUpperCase() + s.slice(1))} Berry</a>`)
               .join(", ")}</p>`;
           if (r.notes) li += `\n    <p class="notes">${esc(r.notes)}</p>`;
+          // Purely additive: a recipe nobody has cooked yet is just a recipe,
+          // so an absent `confirmed:` block renders nothing at all.
+          if (r.confirmed) {
+            const c = r.confirmed === true ? {} : r.confirmed;
+            const when = c.date ? ` <span class="cooked-date">${esc(c.date)}</span>` : "";
+            li += `\n    <p class="cooked"><span class="cooked-badge">&#10003; Made in the BerryDex kitchen</span>${when}</p>`;
+            if (c.verdict) li += `\n    <p class="verdict">${esc(c.verdict)}</p>`;
+          }
           if (r.contributed_by) {
             const c = r.contributed_by;
             const who =
