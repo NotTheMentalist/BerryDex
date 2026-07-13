@@ -4,3 +4,4 @@ name: Custap
 sprite: images/berries/custap-berry.png
 fruit: "Custard apple"
 name_origin: "Shortening of “custard apple”."
+effect: "Lets the holder move first in its priority bracket when HP drops low."

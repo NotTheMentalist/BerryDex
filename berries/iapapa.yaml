@@ -4,3 +4,4 @@ name: Iapapa
 sprite: images/berries/iapapa-berry.png
 fruit: "Papaya"
 name_origin: "Anagram of “papaia”, a spelling of papaya."
+effect: "Restores HP when low, but confuses a holder that dislikes Sour flavors."

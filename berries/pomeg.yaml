@@ -4,3 +4,4 @@ name: Pomeg
 sprite: images/berries/pomeg-berry.png
 fruit: "Pomegranate"
 name_origin: "Shortening of “pomegranate”."
+effect: "Lowers HP effort values, and raises friendship."

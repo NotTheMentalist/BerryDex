@@ -3,4 +3,5 @@ number: 41
 name: Chople
 sprite: images/berries/chople-berry.png
 fruit: "Chile pepper"
-name_origin: "From “chipotle”; resists Fighting."
+name_origin: "From “chipotle”."
+effect: "Halves the damage of a super-effective Fighting-type move."

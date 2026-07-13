@@ -4,3 +4,4 @@ name: Nomel
 sprite: images/berries/nomel-berry.png
 fruit: "Lemon"
 name_origin: "“Lemon” spelled backwards."
+effect: "No battle effect — a Pokéblock/Poffin berry."

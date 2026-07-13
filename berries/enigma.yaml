@@ -4,3 +4,4 @@ name: Enigma
 sprite: images/berries/enigma-berry.png
 fruit: "A mystery!"
 name_origin: "Not a fruit — just “enigma”. Fitting. (Suggestions welcome!)"
+effect: "Restores HP when the holder is hit by a super-effective move."

@@ -4,3 +4,4 @@ name: Mago
 sprite: images/berries/mago-berry.png
 fruit: "Mango"
 name_origin: "Shortening of “mango”."
+effect: "Restores HP when low, but confuses a holder that dislikes Sweet flavors."

@@ -4,3 +4,4 @@ name: Pamtre
 sprite: images/berries/pamtre-berry.png
 fruit: "Date (palm fruit)"
 name_origin: "Anagram-ish of “palm tree”."
+effect: "No battle effect — a Pokéblock/Poffin berry."

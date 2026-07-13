@@ -4,3 +4,4 @@ name: Ganlon
 sprite: images/berries/ganlon-berry.png
 fruit: "Longan"
 name_origin: "Anagram of “longan”."
+effect: "Raises Defense when HP drops low."

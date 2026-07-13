@@ -3,4 +3,5 @@ number: 52
 name: Chilan
 sprite: images/berries/chilan-berry.png
 fruit: "Chilacayote squash?"
-name_origin: "Possibly from “chilacayote” or “chinaberry”; resists Normal. (Uncertain — suggestions welcome!)"
+name_origin: "Possibly from “chilacayote” or “chinaberry”. (Uncertain — suggestions welcome!)"
+effect: "Halves the damage of any Normal-type move."

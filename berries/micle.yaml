@@ -4,3 +4,4 @@ name: Micle
 sprite: images/berries/micle-berry.png
 fruit: "Miracle fruit"
 name_origin: "Shortening of “miracle (fruit)”."
+effect: "Raises the accuracy of the holder's next move when HP drops low."

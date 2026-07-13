@@ -4,3 +4,4 @@ name: Chesto
 sprite: images/berries/chesto-berry.png
 fruit: "Chestnut"
 name_origin: "Shortening of “chestnut”."
+effect: "Wakes the holder from sleep."

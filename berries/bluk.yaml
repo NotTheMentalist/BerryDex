@@ -4,3 +4,4 @@ name: Bluk
 sprite: images/berries/bluk-berry.png
 fruit: "Blackberry"
 name_origin: "From “black(berry)”, despite looking like a blueberry."
+effect: "No battle effect — a Pokéblock/Poffin berry."

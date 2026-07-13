@@ -4,3 +4,4 @@ name: Starf
 sprite: images/berries/starf-berry.png
 fruit: "Starfruit (carambola)"
 name_origin: "Shortening of “starfruit”."
+effect: "Sharply raises one random stat when HP drops low."

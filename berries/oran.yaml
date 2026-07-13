@@ -4,3 +4,4 @@ name: Oran
 sprite: images/berries/oran-berry.png
 fruit: "Orange"
 name_origin: "Shortening of “orange”."
+effect: "Restores 10 HP."

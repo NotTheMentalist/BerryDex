@@ -3,4 +3,5 @@ number: 43
 name: Shuca
 sprite: images/berries/shuca-berry.png
 fruit: "Cashew"
-name_origin: "Possibly an anagram of “cashu(ew)”; resists Ground. (Uncertain — suggestions welcome!)"
+name_origin: "Possibly an anagram of “cashu(ew)”. (Uncertain — suggestions welcome!)"
+effect: "Halves the damage of a super-effective Ground-type move."

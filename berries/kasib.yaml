@@ -3,4 +3,5 @@ number: 48
 name: Kasib
 sprite: images/berries/kasib-berry.png
 fruit: "Casaba melon"
-name_origin: "From “casaba”; resists Ghost."
+name_origin: "From “casaba”."
+effect: "Halves the damage of a super-effective Ghost-type move."

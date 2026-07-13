@@ -4,3 +4,4 @@ name: Wiki
 sprite: images/berries/wiki-berry.png
 fruit: "Kiwi"
 name_origin: "Anagram of “kiwi”."
+effect: "Restores HP when low, but confuses a holder that dislikes Dry flavors."

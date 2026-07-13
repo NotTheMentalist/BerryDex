@@ -4,3 +4,4 @@ name: Spelon
 sprite: images/berries/spelon-berry.png
 fruit: "Melon"
 name_origin: "Contains “melon”; possibly “spiked melon”."
+effect: "No battle effect — a Pokéblock/Poffin berry."

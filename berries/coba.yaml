@@ -3,4 +3,5 @@ number: 44
 name: Coba
 sprite: images/berries/coba-berry.png
 fruit: "Carob"
-name_origin: "Possibly from “carob”; resists Flying. (Uncertain — suggestions welcome!)"
+name_origin: "Possibly from “carob”. (Uncertain — suggestions welcome!)"
+effect: "Halves the damage of a super-effective Flying-type move."

@@ -4,3 +4,4 @@ name: Belue
 sprite: images/berries/belue-berry.png
 fruit: "Blueberry"
 name_origin: "Respelling of “blue(berry)”."
+effect: "No battle effect — a Pokéblock/Poffin berry."

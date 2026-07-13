@@ -4,3 +4,4 @@ name: Kelpsy
 sprite: images/berries/kelpsy-berry.png
 fruit: "Kelp"
 name_origin: "From “kelp” — the odd one out, a sea vegetable."
+effect: "Lowers Attack effort values, and raises friendship."

@@ -4,3 +4,4 @@ name: Petaya
 sprite: images/berries/petaya-berry.png
 fruit: "Pitaya (dragon fruit)"
 name_origin: "Respelling of “pitaya”."
+effect: "Raises Special Attack when HP drops low."

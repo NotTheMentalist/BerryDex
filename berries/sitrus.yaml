@@ -4,3 +4,4 @@ name: Sitrus
 sprite: images/berries/sitrus-berry.png
 fruit: "Citrus"
 name_origin: "Respelling of “citrus”."
+effect: "Restores a quarter of the holder's max HP."

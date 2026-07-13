@@ -4,3 +4,4 @@ name: Lansat
 sprite: images/berries/lansat-berry.png
 fruit: "Langsat"
 name_origin: "Respelling of “langsat”."
+effect: "Raises the critical-hit ratio when HP drops low."

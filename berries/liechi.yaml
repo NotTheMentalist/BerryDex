@@ -4,3 +4,4 @@ name: Liechi
 sprite: images/berries/liechi-berry.png
 fruit: "Lychee"
 name_origin: "Respelling of “lychee”."
+effect: "Raises Attack when HP drops low."

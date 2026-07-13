@@ -3,4 +3,5 @@ number: 36
 name: Occa
 sprite: images/berries/occa-berry.png
 fruit: "Cacao (cocoa)"
-name_origin: "From “cocoa”; resists Fire."
+name_origin: "From “cocoa”."
+effect: "Halves the damage of a super-effective Fire-type move."

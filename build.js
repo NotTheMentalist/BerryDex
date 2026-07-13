@@ -84,7 +84,7 @@ function page({ title, body, depth = 0 }) {
   <main class="screen-bezel">
     <div class="plaque">
       <p class="plaque-label">DOT MATRIX WITH BERRY FLAVOR</p>
-      <div class="plaque-battery"><span class="battery-led"></span>BATTERY</div>
+      <div class="plaque-battery"><span class="battery-led"></span><span class="battery-text">BATTERY</span></div>
       <div class="screen">
 ${body}
       </div>
@@ -224,6 +224,11 @@ function berryPage(b) {
       ${b.name_origin ? `<p class="origin">${esc(b.name_origin)}</p>` : ""}
     </div>
   </div>
+  ${
+    b.effect
+      ? `<p class="effect"><span class="effect-tag">In-game effect</span> ${esc(b.effect)}</p>`
+      : ""
+  }
   <h3>Recipes</h3>
   ${recipes}
 </article>

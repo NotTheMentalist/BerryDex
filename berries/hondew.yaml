@@ -4,3 +4,4 @@ name: Hondew
 sprite: images/berries/hondew-berry.png
 fruit: "Honeydew melon"
 name_origin: "Respelling of “honeydew”."
+effect: "Lowers Special Attack effort values, and raises friendship."

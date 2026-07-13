@@ -3,4 +3,5 @@ number: 42
 name: Kebia
 sprite: images/berries/kebia-berry.png
 fruit: "Akebia (akebi fruit)"
-name_origin: "From “akebia”; resists Poison."
+name_origin: "From “akebia”."
+effect: "Halves the damage of a super-effective Poison-type move."

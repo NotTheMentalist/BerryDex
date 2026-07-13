@@ -3,4 +3,5 @@ number: 40
 name: Yache
 sprite: images/berries/yache-berry.png
 fruit: "Lychee"
-name_origin: "Possibly an anagram-ish take on “lychee”; resists Ice."
+name_origin: "Possibly an anagram-ish take on “lychee”."
+effect: "Halves the damage of a super-effective Ice-type move."

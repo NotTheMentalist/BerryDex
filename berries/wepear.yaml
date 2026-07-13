@@ -4,3 +4,4 @@ name: Wepear
 sprite: images/berries/wepear-berry.png
 fruit: "Pear"
 name_origin: "Contains “pear”; possibly “wax apple” + “pear”."
+effect: "No battle effect — a Pokéblock/Poffin berry."

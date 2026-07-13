@@ -4,3 +4,4 @@ name: Cornn
 sprite: images/berries/cornn-berry.png
 fruit: "Corn"
 name_origin: "From “corn” — heirloom flint corn, by the look of it."
+effect: "No battle effect — a Pokéblock/Poffin berry."

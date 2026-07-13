@@ -4,3 +4,4 @@ name: Cheri
 sprite: images/berries/cheri-berry.png
 fruit: "Cherry"
 name_origin: "Shortening of “cherry”."
+effect: "Cures paralysis."

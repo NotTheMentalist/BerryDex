@@ -4,3 +4,4 @@ name: Lum
 sprite: images/berries/lum-berry.png
 fruit: "Plum"
 name_origin: "Shortening of “plum”."
+effect: "Cures any status condition, including confusion."

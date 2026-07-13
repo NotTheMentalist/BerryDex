@@ -4,3 +4,4 @@ name: Rowap
 sprite: images/berries/rowap-berry.png
 fruit: "Rowan berry"
 name_origin: "Possibly a corruption of “rowan”. (Uncertain — suggestions welcome!)"
+effect: "Hurts an attacker that lands a special move on the holder."

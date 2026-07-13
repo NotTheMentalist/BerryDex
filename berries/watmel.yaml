@@ -4,3 +4,4 @@ name: Watmel
 sprite: images/berries/watmel-berry.png
 fruit: "Watermelon"
 name_origin: "Shortening of “watermelon”."
+effect: "No battle effect — a Pokéblock/Poffin berry."

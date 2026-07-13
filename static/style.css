@@ -17,7 +17,10 @@
      more anime-Pokédex chunk. The battery LED/label scale along with it. */
   --plaque-gutter: 2.6rem;
   --plaque-battery-col: calc(var(--plaque-gutter) * 1.7);
-  --battery-led-size: calc(var(--plaque-gutter) * 0.27);
+  /* Both clamped: derived purely from the gutter, they shrink to illegible
+     (3px text) once the gutter tightens on phones. */
+  --battery-led-size: clamp(0.55rem, calc(var(--plaque-gutter) * 0.27), 0.9rem);
+  --battery-text-size: clamp(0.5rem, calc(var(--plaque-gutter) * 0.21), 0.65rem);
 
   /* Minimum berry-card width. The device's nested chrome (shell → bezel →
      plaque → screen) eats real width, so this shrinks on phones to keep the
@@ -132,9 +135,10 @@ h1 {
   align-items: center;
   gap: 0.3rem;
   color: #c9c9d8;
-  font-size: calc(var(--plaque-gutter) * 0.21);
+  font-size: var(--battery-text-size);
   letter-spacing: 0.12em;
 }
+.battery-text { line-height: 1; }
 .battery-led {
   width: var(--battery-led-size);
   height: var(--battery-led-size);
@@ -236,6 +240,29 @@ h1 {
 .berry h2 { margin: 0; text-transform: uppercase; letter-spacing: 0.05em; }
 .berry h2 .num { font-size: 1rem; }
 .fruit-line { margin: 0.25rem 0 0; }
+/* In-game effect: a readout panel on the entry page. The tag stacks above the
+   text on narrow screens rather than squeezing it. */
+.effect {
+  margin: 1.1rem 0 0;
+  background: var(--panel);
+  border: 2px solid var(--screen-line);
+  border-left: 6px solid var(--accent);
+  border-radius: 0.4rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.92rem;
+}
+.effect-tag {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+@media (max-width: 480px) {
+  .effect-tag { display: block; margin-bottom: 0.2rem; }
+}
 .origin { color: var(--muted); font-size: 0.9rem; margin: 0.25rem 0 0; }
 .berry h3 {
   margin-top: 2rem;
@@ -284,11 +311,15 @@ footer p { margin: 0.25rem 0; }
   .screen-bezel { padding: 0.6rem 0.6rem 0.5rem; }
   .plaque {
     --plaque-gutter: 1rem;
+    /* No room for the "BATTERY" caption at this width — the bare LED reads
+       fine, so the left column narrows to match the right gutter. */
+    --plaque-battery-col: 1.2rem;
     padding-top: 1.6rem;
     padding-bottom: 1rem;
     border-radius: 0.5rem 0.5rem 1.2rem 0.5rem;
   }
-  .plaque-battery { top: 2.4rem; }
+  .battery-text { display: none; }
+  .plaque-battery { top: 2.2rem; }
   .lens { width: 3.2rem; height: 3.2rem; border-width: 4px; }
   h1 { font-size: 1.6rem; }
   .card { padding: 0.6rem 0.3rem; }

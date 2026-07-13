@@ -4,3 +4,4 @@ name: Grepa
 sprite: images/berries/grepa-berry.png
 fruit: "Grape"
 name_origin: "Anagram of “grape”."
+effect: "Lowers Special Defense effort values, and raises friendship."

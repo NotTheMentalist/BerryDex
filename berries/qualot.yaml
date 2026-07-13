@@ -4,3 +4,4 @@ name: Qualot
 sprite: images/berries/qualot-berry.png
 fruit: "Loquat"
 name_origin: "Anagram of “loquat”."
+effect: "Lowers Defense effort values, and raises friendship."

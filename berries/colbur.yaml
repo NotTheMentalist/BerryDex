@@ -3,4 +3,5 @@ number: 50
 name: Colbur
 sprite: images/berries/colbur-berry.png
 fruit: "Colubrina (nakedwood)"
-name_origin: "Possibly from “colubrina”; resists Dark. (Uncertain — suggestions welcome!)"
+name_origin: "Possibly from “colubrina”. (Uncertain — suggestions welcome!)"
+effect: "Halves the damage of a super-effective Dark-type move."

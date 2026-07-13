@@ -4,3 +4,4 @@ name: Jaboca
 sprite: images/berries/jaboca-berry.png
 fruit: "Jabuticaba"
 name_origin: "Shortening of “jabuticaba”."
+effect: "Hurts an attacker that lands a physical move on the holder."

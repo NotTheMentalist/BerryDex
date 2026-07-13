@@ -4,3 +4,4 @@ name: Salac
 sprite: images/berries/salac-berry.png
 fruit: "Salak (snake fruit)"
 name_origin: "From “salak”."
+effect: "Raises Speed when HP drops low."

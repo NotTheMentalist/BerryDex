@@ -4,3 +4,4 @@ name: Leppa
 sprite: images/berries/leppa-berry.png
 fruit: "Apple"
 name_origin: "Anagram of “appel”, a misspelling of apple."
+effect: "Restores 10 PP to a depleted move."

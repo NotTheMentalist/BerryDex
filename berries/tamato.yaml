@@ -4,3 +4,4 @@ name: Tamato
 sprite: images/berries/tamato-berry.png
 fruit: "Tomato"
 name_origin: "Respelling of “tomato” (with a hint of “tama”, Japanese for ball)."
+effect: "Lowers Speed effort values, and raises friendship."

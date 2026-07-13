@@ -3,4 +3,5 @@ number: 47
 name: Charti
 sprite: images/berries/charti-berry.png
 fruit: "Artichoke"
-name_origin: "Anagram of “artich(oke)”; resists Rock."
+name_origin: "Anagram of “artich(oke)”."
+effect: "Halves the damage of a super-effective Rock-type move."

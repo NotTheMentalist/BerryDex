@@ -4,3 +4,4 @@ name: Apicot
 sprite: images/berries/apicot-berry.png
 fruit: "Apricot"
 name_origin: "Respelling of “apricot”."
+effect: "Raises Special Defense when HP drops low."

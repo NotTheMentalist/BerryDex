@@ -4,3 +4,4 @@ name: Figy
 sprite: images/berries/figy-berry.png
 fruit: "Fig"
 name_origin: "From “fig”."
+effect: "Restores HP when low, but confuses a holder that dislikes Spicy flavors."

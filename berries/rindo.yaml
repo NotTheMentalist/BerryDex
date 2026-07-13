@@ -3,4 +3,5 @@ number: 39
 name: Rindo
 sprite: images/berries/rindo-berry.png
 fruit: "Tamarind"
-name_origin: "From “tamarindo”; resists Grass."
+name_origin: "From “tamarindo”."
+effect: "Halves the damage of a super-effective Grass-type move."

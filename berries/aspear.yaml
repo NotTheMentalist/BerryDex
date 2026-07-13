@@ -4,3 +4,4 @@ name: Aspear
 sprite: images/berries/aspear-berry.png
 fruit: "Pear"
 name_origin: "Contains “pear”; possibly “asparagus” + “pear”."
+effect: "Defrosts a frozen holder."

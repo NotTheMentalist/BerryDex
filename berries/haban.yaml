@@ -3,4 +3,5 @@ number: 49
 name: Haban
 sprite: images/berries/haban-berry.png
 fruit: "Habanero pepper"
-name_origin: "From “habanero”; resists Dragon."
+name_origin: "From “habanero”."
+effect: "Halves the damage of a super-effective Dragon-type move."

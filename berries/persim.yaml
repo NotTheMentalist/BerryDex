@@ -4,3 +4,4 @@ name: Persim
 sprite: images/berries/persim-berry.png
 fruit: "Persimmon"
 name_origin: "Shortening of “persimmon”."
+effect: "Snaps the holder out of confusion."

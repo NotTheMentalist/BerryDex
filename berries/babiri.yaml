@@ -3,4 +3,5 @@ number: 51
 name: Babiri
 sprite: images/berries/babiri-berry.png
 fruit: "Babaco?"
-name_origin: "Origin unclear; resists Steel. (Uncertain — suggestions welcome!)"
+name_origin: "Origin unclear. (Uncertain — suggestions welcome!)"
+effect: "Halves the damage of a super-effective Steel-type move."

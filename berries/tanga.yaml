@@ -3,4 +3,5 @@ number: 46
 name: Tanga
 sprite: images/berries/tanga-berry.png
 fruit: "Pitanga (Surinam cherry)"
-name_origin: "From “pitanga”; resists Bug."
+name_origin: "From “pitanga”."
+effect: "Halves the damage of a super-effective Bug-type move."
