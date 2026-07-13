@@ -14,7 +14,16 @@ welcome contribution too.
 ## Where the data lives
 
 - Every **berry** is a YAML file in [`berries/`](berries/) (number, name,
-  sprite, real-world fruit, name origin).
+  sprite, real-world fruit, name origin, in-game effect):
+
+  ```yaml
+  number: 41
+  name: Chople
+  sprite: images/berries/chople-berry.png
+  fruit: "Chile pepper"
+  name_origin: "From “chipotle”."
+  effect: "Halves the damage of a super-effective Fighting-type move."
+  ```
 - Every **recipe** is its own YAML file in [`recipes/`](recipes/), and lists
   which berries it belongs to. One recipe can span several berries — a
   pineapple upside-down cake is a Pinap *and* Cheri recipe.
@@ -50,10 +59,16 @@ welcome contribution too.
    [open an issue](../../issues/new) with the recipe name and link and someone
    will add it.
 
-## Suggesting a fruit identification or name origin
+## Fixing a berry: fruit, name origin, or in-game effect
 
-Update the `fruit:` and `name_origin:` fields, and please include your reasoning
-in the PR/issue (Bulbapedia's name-origin sections are a good source).
+Edit the berry's file in `berries/` — no new files needed:
+
+- `fruit:` and `name_origin:` — the real-world fruit and where the (mis)spelling
+  or anagram comes from. Several berries say "Uncertain — suggestions welcome!";
+  please include your reasoning in the PR or issue (Bulbapedia's name-origin
+  sections are a good source).
+- `effect:` — what the berry does in the games. These follow Generation III–IV
+  behavior; corrections and clarifications for later generations are welcome.
 
 ## Previewing locally
 
