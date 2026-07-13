@@ -18,6 +18,12 @@
   --plaque-gutter: 2.6rem;
   --plaque-battery-col: calc(var(--plaque-gutter) * 1.7);
   --battery-led-size: calc(var(--plaque-gutter) * 0.27);
+
+  /* Minimum berry-card width. The device's nested chrome (shell → bezel →
+     plaque → screen) eats real width, so this shrinks on phones to keep the
+     grid at two columns instead of collapsing to one. */
+  --card-min: 9.5rem;
+  --screen-pad: 1.25rem;
 }
 @media (prefers-color-scheme: dark) {
   :root { --backdrop: #24211e; }
@@ -120,8 +126,7 @@ h1 {
   position: absolute;
   left: 0;
   width: var(--plaque-battery-col);
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,7 +148,7 @@ h1 {
     var(--screen);
   border: 3px solid #33402e;
   border-radius: 0.4rem;
-  padding: 1.25rem;
+  padding: var(--screen-pad);
   min-height: 12rem;
   box-shadow: inset 0 0 24px rgba(15, 56, 15, 0.35);
 }
@@ -198,7 +203,7 @@ h1 {
 /* ---------- index grid ---------- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr));
   gap: 0.6rem;
 }
 .card {
@@ -268,9 +273,24 @@ footer {
 footer a { color: #fff; }
 footer p { margin: 0.25rem 0; }
 
+/* Portrait phone: a phone in the hand is basically a tall Game Boy, so the
+   layout holds — but the nested chrome has to give up width to keep the berry
+   grid at two columns. */
 @media (max-width: 480px) {
-  .pokedex { padding: 1rem 0.9rem; border-radius: 1rem 3rem 1rem 1rem; }
-  .hinge { margin: 0 -0.9rem 1rem; }
-  .screen-bezel { padding: 0.9rem 0.9rem 0.7rem; }
-  .plaque { --plaque-gutter: 1.4rem; padding-top: 1.8rem; padding-bottom: 1.2rem; }
+  :root { --card-min: 7rem; --screen-pad: 0.7rem; }
+  body { padding: 0.75rem 0.4rem 2rem; }
+  .pokedex { padding: 0.8rem 0.6rem 0.9rem; border-radius: 1rem 3rem 1rem 1rem; }
+  .hinge { margin: 0 -0.6rem 1rem; }
+  .screen-bezel { padding: 0.6rem 0.6rem 0.5rem; }
+  .plaque {
+    --plaque-gutter: 1rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem 0.5rem 1.2rem 0.5rem;
+  }
+  .plaque-battery { top: 2.4rem; }
+  .lens { width: 3.2rem; height: 3.2rem; border-width: 4px; }
+  h1 { font-size: 1.6rem; }
+  .card { padding: 0.6rem 0.3rem; }
+  .card .fruit { font-size: 0.72rem; }
 }
