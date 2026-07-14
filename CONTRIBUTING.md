@@ -12,9 +12,8 @@ marinade, apple in mulligatawny, grapes roasted alongside chicken: that's the
 register we're after. Sweets are a fine thing and there are a million sites
 for them.
 
-Recipes are also *made*, not just collected. If one sounds good, the maintainer
-will likely cook it and report back — see **Made in the kitchen** below. That's
-a bonus, not a bar: your recipe goes up either way.
+Recipes are also *made*, not just collected — if one sounds good, the maintainer
+will likely cook it, and any useful findings end up in that recipe's `notes:`.
 
 Recipes whose name ends in **"(Sample Recipe)"** were AI-generated to
 demonstrate the format, not vouched for by a human cook. They're fair game:
@@ -22,21 +21,6 @@ if you've made something better for that fruit, feel free to replace one
 outright — and if you've actually cooked a sample recipe and it holds up,
 a PR simply dropping the marker (with a note in the description) is a
 welcome contribution too.
-
-## Made in the kitchen
-
-When a recipe here has actually been cooked, it grows a `confirmed:` block and
-the site shows a "Made in the BerryDex kitchen" badge with the verdict:
-
-```yaml
-confirmed:
-  date: 2026-07-13
-  verdict: "Cut the sugar by half; a six-hour marinade was plenty."
-```
-
-This is purely additive. A recipe **without** the block isn't flagged, doubted,
-or marked as lesser anywhere on the site — it's simply a recipe, like any other.
-The badge only means someone stood at a stove and has opinions.
 
 ## Where the data lives
 

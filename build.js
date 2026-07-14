@@ -204,14 +204,6 @@ function berryPage(b) {
               .map((s) => `<a href="${esc(s)}.html">${esc(s[0].toUpperCase() + s.slice(1))} Berry</a>`)
               .join(", ")}</p>`;
           if (r.notes) li += `\n    <p class="notes">${esc(r.notes)}</p>`;
-          // Purely additive: a recipe nobody has cooked yet is just a recipe,
-          // so an absent `confirmed:` block renders nothing at all.
-          if (r.confirmed) {
-            const c = r.confirmed === true ? {} : r.confirmed;
-            const when = c.date ? ` <span class="cooked-date">${esc(c.date)}</span>` : "";
-            li += `\n    <p class="cooked"><span class="cooked-badge">&#10003; Made in the BerryDex kitchen</span>${when}</p>`;
-            if (c.verdict) li += `\n    <p class="verdict">${esc(c.verdict)}</p>`;
-          }
           if (r.contributed_by) {
             const c = r.contributed_by;
             const who =
