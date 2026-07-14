@@ -68,6 +68,7 @@ function page({ title, body, depth = 0 }) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
+<link rel="icon" href="${base}favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="${base}style.css">
 </head>
 <body>
@@ -257,6 +258,7 @@ for (const b of berries) {
   fs.writeFileSync(path.join(DIST, "berry", `${b.slug}.html`), berryPage(b));
 }
 fs.copyFileSync(path.join(ROOT, "static", "style.css"), path.join(DIST, "style.css"));
+fs.copyFileSync(path.join(ROOT, "static", "favicon.svg"), path.join(DIST, "favicon.svg"));
 fs.cpSync(path.join(ROOT, "images"), path.join(DIST, "images"), { recursive: true });
 
 console.log(`Built ${berries.length} berries → dist/`);
