@@ -14,6 +14,9 @@ for them.
 
 Recipes are also *made*, not just collected — if one sounds good, the maintainer
 will likely cook it, and any useful findings end up in that recipe's `notes:`.
+Dishes that have actually been made carry `made: true` and show a small ✓ next
+to the title. It's a quiet mark, not a rank: a recipe without it is just a
+recipe.
 
 Recipes whose name ends in **"(Sample Recipe)"** were AI-generated to
 demonstrate the format, not vouched for by a human cook. They're fair game:

@@ -281,6 +281,7 @@ h1 {
   margin-bottom: 0.6rem;
 }
 .recipe-link { font-weight: 700; }
+.made { margin-left: 0.4rem; color: var(--muted); font-size: 0.8rem; cursor: help; }
 .notes { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9rem; }
 .credit { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.8rem; font-style: italic; }
 .also { margin: 0.2rem 0 0; font-size: 0.85rem; color: var(--muted); }

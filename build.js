@@ -198,6 +198,9 @@ function berryPage(b) {
     ? `<ul class="recipes">\n${b.recipes
         .map((r) => {
           let li = `  <li>\n    <a class="recipe-link" href="${esc(r.link)}">${esc(r.name)}</a>`;
+          // Quiet mark, not a badge: a small check for dishes actually cooked.
+          if (r.made)
+            li += `<span class="made" title="Made by the maintainer">&#10003;</span>`;
           const others = r.berries.filter((s) => s !== b.slug);
           if (others.length)
             li += `\n    <p class="also">Also uses: ${others
